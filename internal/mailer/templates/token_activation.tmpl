@@ -1,0 +1,43 @@
+{{define "subject"}}Activate your Greenlight account{{end}}
+
+{{define "plainBody"}}
+Hi,
+
+To activate your Greenlight account please visit h͟t͟t͟p͟s͟:͟/͟/͟e͟x͟a͟m͟p͟l͟e͟.͟c͟o͟m͟/͟u͟s͟e͟r͟s͟/͟a͟c͟t͟i͟v͟a͟t͟e͟  and 
+enter the following code:
+
+--------------------------
+{{.activationToken}}
+--------------------------
+
+Please note that this is a one-time use token and it will expire in 3 days.
+
+Thanks,
+
+The Greenlight Team
+{{end}}
+
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <p>Hi,</p>
+    <p>To activate your Greenlight account please visit h͟t͟t͟p͟s͟:͟/͟/͟e͟x͟a͟m͟p͟l͟e͟.͟c͟o͟m͟/͟u͟s͟e͟r͟s͟/͟a͟c͟t͟i͟v͟a͟t͟e͟  and 
+enter the following code:</p>
+    <p>--------------------------</p>
+        <pre>
+            <code>
+                {{.activationToken}}
+            </code>
+        </pre>
+    <p>--------------------------</p>
+    <p>Please note that this is a one-time use token and it will expire in 3 days.</p>
+    <p>Thanks,</p>
+    <p>The Greenlight Team</p>
+  </body>
+</html>
+{{end}}
